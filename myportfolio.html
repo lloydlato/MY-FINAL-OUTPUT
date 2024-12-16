@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>My Portfolio</title>
+    <style>
+   /* General Body Styling */
+body {
+    background-color: #307bc7;
+    color: #3f2b2b;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    padding: 30px 0;
+    background: rgba(47, 49, 56, 0.8);
+    color: #fff;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav .nav {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+nav .nav-link {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+nav .nav-link:hover {
+    color: #ffdd57;
+}
+
+/* Container Styling */
+.container {
+    margin: 5rem auto;
+    max-width: 1200px;
+    padding: 1rem;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.2em;
+    margin-bottom: 2rem;
+    color: #fff;
+}
+
+/* Portfolio Item Styling */
+.portfolio-item {
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    background: #ffffff;
+}
+
+.portfolio-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    display: block;
+}
+
+.portfolio-item h5 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #333;
+    text-align: center;
+}
+
+.portfolio-item p {
+    text-align: center;
+    color: #666;
+    margin: 10px 0;
+}
+
+/* Hover Effects */
+.portfolio-item:hover {
+    transform: translateY(-10px);
+}
+
+.portfolio-item:hover .portfolio-img {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.portfolio-item:hover h5 {
+    color: #007bff;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 64px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 992px) {
+    .portfolio-item {
+        margin-bottom: 20px;
+    }
+    h2 {
+        font-size: 1.8em;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin: 2rem auto;
+        padding: 0.5rem;
+    }
+    nav .nav-link {
+        font-size: 1em;
+    }
+    .portfolio-item h5 {
+        font-size: 1em;
+    }
+    .portfolio-item p {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 576px) {
+    .portfolio-item {
+        margin-bottom: 15px;
+    }
+    h1 {
+        font-size: 1.8em;
+    }
+    nav .nav-link {
+        font-size: 0.9em;
+        margin: 0 5px;
+    }
+    .portfolio-item h5 {
+        font-size: 0.9em;
+    }
+    .portfolio-item p {
+        font-size: 0.8em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container my-5">
+        <h2 class="text-center">MEMORIES</h2>
+        <div class="row" id="portfolio">
+            <div class="col-md-4 portfolio-item">
+                <img src="lol1.jpg" alt="Description of image 1" class="portfolio-img">
+                <h5>Project Title 1</h5>
+                <p>ARTS MONTH- Champion 2019</p>
+            </div>
+            <div class="col-md-4 portfolio-item">
+                <img src="lol2.jpg" alt="Description of image 2" class="portfolio-img">
+                <h5>Project Title 2</h5>
+                <p>NMRAA 2019 FOLK DANCE Champion</p>
+            </div>
+            <div class="col-md-4 portfolio-item">
+                <img src="lol3.jpg" alt="Description of image 3" class="portfolio-img">
+                <h5>Project Title 3</h5>
+                <p>Uncle Brew Staff</p>
+            </div>
+            <div class="col-md-4 portfolio-item">
+                <img src="lol4.jpg" alt="Description of image 4" class="portfolio-img">
+                <h5>Project Title 4</h5>
+                <p>NSTP WATER SURVIVAL</p>
+            </div>
+            <div class="col-md-4 portfolio-item">
+                <img src="lol5.jpg" alt="Description of image 5" class="portfolio-img">
+                <h5>Project Title 5</h5>
+                <p>CCS GALA 2023</p>
+            </div>
+            <div class="col-md-4 portfolio-item">
+                <img src="lol6.jpg" alt="Description of image 6" class="portfolio-img">
+                <h5>Project Title 6</h5>
+                <p>CCS PALARO 2023</p>
+            </div>
+            
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Lloyd Lato. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
